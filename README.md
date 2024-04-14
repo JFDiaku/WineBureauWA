@@ -1,2 +1,0 @@
-# WineBureauWA
-Ecommerce Wine store
