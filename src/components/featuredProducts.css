@@ -1,0 +1,82 @@
+.featuredProducts{
+  justify-content: center;
+  padding: 3rem 1rem;
+
+}
+
+
+.slick-next{
+  right: -.5rem !important;
+  z-index: 999;
+}
+
+.slick-prev{
+  left: -.5rem !important;
+  z-index: 999;
+}
+.slider-container{
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+}
+
+
+
+
+.slick-slide{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+.featured-prod-title{
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hot-deals{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 3rem;
+  gap: 2rem;
+  row-gap: 3rem;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media screen and (max-width:1000px) {
+  .hot-deals{
+    padding: 2rem ;
+    gap: 1rem;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .hot-deals{
+    padding: 2rem .5rem;
+    gap: 0;
+    row-gap: 2rem;
+  }
+  .featuredProducts{
+    padding: 3rem 0;
+  }
+  
+}
+
+
+
+@media screen and (max-width:350px) {
+
+  
+}
+

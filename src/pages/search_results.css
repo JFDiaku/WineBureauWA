@@ -1,0 +1,36 @@
+.Search-results{
+  margin-top: 5rem;
+  padding: 2rem 3rem;
+  font-family: var(--font2);
+}
+
+.search-data{
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+.search-title{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:1100px) {
+  .Search-results{
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .search-title{
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width:500px) {
+  .search-title{
+    font-size: 1em;
+  
+  }
+}
+
+

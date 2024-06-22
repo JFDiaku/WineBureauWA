@@ -1,0 +1,94 @@
+.redwine{
+  margin-top: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.red-banner{
+  background-image: url(../assets/images/wine18.jpg);
+  background-position: 10% 50%;
+}
+
+.white-banner{
+  background-image:  url(../assets/images/wine20.jpg);
+
+}
+
+.spark-banner{
+  background-image:  url(../assets/images/sparkling.jpg);
+  background-position: 0% 50%;
+}
+
+.rose-banner{
+  background-image:  url(../assets/images/wine19.jpg);
+}
+
+.redNav{
+  color: white;
+}
+
+.redNav .pageNav-link{
+  color: white;
+}
+
+
+.redwine-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width:1100px) {
+  .redwine-left{
+    opacity: 1 !important;
+    margin: 0 !important;
+  }
+  .closeIcon{
+    display: none !important;
+  }
+  .filter-widgets-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  
+}
+
+@media screen and (max-width:1100px) {
+  .redwine{
+    padding: 0;
+    position: relative;
+  }
+  .redwine .pageNav{
+    display: none;
+  }
+
+  .redwine-left{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(10, 10, 10, 0.375);
+    z-index: 999;
+    padding: 0 ;
+    transition: all .5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -2rem;
+
+  }
+
+  .filter-widgets-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  
+}

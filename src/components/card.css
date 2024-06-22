@@ -1,0 +1,162 @@
+.card{
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  transition: all .5s ease;
+}
+
+.card-image{
+  height: 300px;
+  width: 100%;
+  transition: all .5s;
+}
+
+.card-bottom-left{
+  display: flex;
+}
+
+.card-bottom-left p{
+  font-size: .8em;
+}
+
+.card-item-price{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: .9em;
+  margin: auto;
+  color: var(--base);
+}
+
+.card-item-discount-price{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: .9em;
+  margin: auto;
+  color: rgba(143, 142, 142, 0.32);
+}
+
+.discount-section{
+  display: flex;
+}
+
+.card-bottom{
+  display: flex;
+}
+
+.link{
+  cursor: pointer;
+}
+
+
+.card-item-name{
+  font-size: .9em;
+  margin: auto;
+  font-weight: 500;
+  font-family: var(--font2);
+}
+
+.card-item-name:hover{
+  color: var(--base);
+}
+
+.card-options{
+  display: flex;
+  transition: all .3s ease-in-out;
+
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  margin-top: 95%;
+}
+
+.card:hover > .card-options{
+  margin-top: 90%;
+  opacity: 1;
+}
+
+
+.snackbar-text{
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem 1rem 1rem 0;
+
+}
+
+.sale-tag{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  top: 5%;
+  right: 5%;
+  font-weight: 500;
+  font-size: .8em;
+  color: white;
+  background-color: var(--base);
+  border-radius: 50%;
+  padding:.8rem .5rem;
+}
+
+
+
+@media screen and (max-width: 570px){
+  .card{
+   width: 14rem
+  }
+  .card-image{
+   height: 270px ;
+  }
+
+ } 
+
+ @media screen and (max-width: 450px){
+  .card{
+   width: 10.5rem
+  }
+  .card-image{
+   height: 220px ;
+  }
+  .card-options, .sale-tag{
+   transform: scale(.8);
+  }
+ } 
+
+ @media screen and (max-width: 400px){
+  .card{
+   width: 10rem
+  }
+  .card-image{
+   height: 200px ;
+  }
+  .card-options, .sale-tag{
+   transform: scale(.75);
+  }
+ } 
+
+ @media screen and (max-width: 375px){
+  .card{
+   width: 9rem
+  }
+  .card-options,.sale-tag{
+   transform: scale(.7);
+  }
+ } 
+
+
+
+ @media screen and (max-width: 350px){
+  .card{
+   width: 8.5rem
+  }
+  .card-image{
+    height: 180px ;
+   }
+  .card-options,.sale-tag{
+   transform: scale(.7);
+  }
+ } 

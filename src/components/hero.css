@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+.hero{
+  justify-content: space-between;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.hero-sec{
+  width: 33.33%;
+  background-position: center;
+  background-size: cover;
+  padding:  3rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 25rem;
+}
+
+
+
+.hero-sec:nth-child(1){
+  background-image: url(../assets/images/wine11.webp);
+  
+}
+
+.hero-sec:nth-child(2){
+  background-image: url(../assets/images/wine13.jpg);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  outline: 2px gray solid;
+  outline-offset: -1rem;
+
+}
+.hero-sec:nth-child(3){
+  background-image: url(../assets/images/wine12.webp);
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+.shop-btn, .btn{
+  background-color: var(--base);
+  border: none;
+  margin: auto;
+  padding: .8rem 1.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.shopLink{
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text1{
+  font-family: var(--font2);
+}
+
+.text2{
+  font-weight: 500;
+  font-size: 2.7em;
+}
+
+.text3{
+  font-weight: 300;
+}
+
+
+@media screen and (min-width:1800px){
+  .hero-sec{
+    min-height: 35rem;
+  }
+  .hero-text, .hero-btn{
+    transform: scale(1.2);
+  }
+
+  .hero-text{
+    margin-top: 3rem;
+  }
+ 
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+  .hero-text{
+    transform: scale(.8);
+  }
+ 
+}
+
+
+@media screen and (max-width:750px) {
+  .hero{
+    flex-direction: column;
+  }
+  .hero-sec:nth-child(1), .hero-sec:nth-child(3){
+    display: none;
+  }
+  .hero-sec{
+    width: 100% ;
+  }
+
+  
+.hero-sec:nth-child(1){
+  height: 25rem;
+}
+
+.hero-sec:nth-child(2){
+  height: 25rem;
+}
+
+.hero-sec:nth-child(3){
+  height: 25rem;
+}
+}
+
+
+
+@media screen and (max-width:350px) {
+  .hero-sec{
+    padding: 2rem 1rem;
+  }
+}

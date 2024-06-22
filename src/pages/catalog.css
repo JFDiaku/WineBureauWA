@@ -1,0 +1,165 @@
+.pageNav{
+  display: flex;
+  align-items: center;
+}
+
+
+.pageNav-link{
+  font-size: .8em;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.catalog{
+  padding: 1rem 2rem 10rem 2rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.catalog-right-title{
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 5rem;
+  font-family: var(--font2);
+}
+
+.catalog-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.catalog-left{
+  display: flex;
+  gap: 2rem;
+  position: sticky;
+  top: 6rem;
+  height: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.catalog-left::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.products-banner{
+  background-image: url(../assets/images/wine16.jpg);
+  color: white;
+  height: 15rem;
+  background-position: 50% 80%;
+  background-size: cover;
+}
+
+
+/* mobile catalog */
+
+
+.mobile-catalog{
+  position: relative;
+}
+
+.mobile-pageNav{
+  position: absolute;
+  z-index: 999;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.mobile-products-banner{
+  margin-top: 5rem;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+
+.mobile-catalog-title{
+  font-size: 2.3em;
+  font-family: var(--font2);
+  text-align: center;
+}
+
+.mobile-catalog-pageNav{
+  width: fit-content;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mobile-widgets{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  z-index: 999;
+  top: 20rem;
+  padding: 2rem 1rem 1rem 1rem;
+  gap: .5rem;
+  justify-content: center; 
+}
+
+@media screen and (min-width:1100px) {
+  .catalog-left{
+    opacity: 1 !important;
+  }
+ .mobile-filters-title-box{
+  display: none !important;
+ }
+ .catalog{
+  margin-top: 4rem;
+ }
+
+
+  
+}
+
+@media screen and (max-width:1100px) {
+  .catalog{
+    padding: 0;
+    position: relative;
+  }
+  .catalog .pageNav{
+    display: none;
+  }
+
+  .catalog-left{
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(10, 10, 10, 0.375);
+    z-index: 999;
+    padding: 0 ;
+    transition: all .5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: -2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+  }
+ 
+  .catalog-page-banner{
+    margin-top: 1rem;
+  }
+
+  
+}

@@ -1,0 +1,65 @@
+.winePromo{
+background-image: url(../assets/images/wine16.jpg);
+  height: 35rem;
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  transition: all .3s ease;
+}
+
+
+.promo-title{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(24, 24, 24);
+  font-size: 4em;
+}
+
+.promo-text{
+  color:black;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: var(--font2);
+}
+
+.winePromo-box{
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+.promo-link{
+  padding: 1.2rem 2.2rem;
+font-weight: 1.2em;
+}
+
+
+@media screen and (max-width: 550px) {
+  .winePromo-box{
+    top: 10%;
+  }
+  .winePromo{
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .winePromo{
+    padding: 0 1rem;
+  }
+  .promo-title{
+    font-size: 3em;
+  }
+  .promo-text{
+    font-size: 1.2em;
+  }
+}

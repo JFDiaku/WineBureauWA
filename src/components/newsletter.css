@@ -1,0 +1,62 @@
+.newsletter{
+  background-image: url(../assets/images/wine14.jpg);
+  background-size:cover;
+  background-position: 50% 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.newsletter-text, .newsletter-input{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+.newsletter-title{
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  margin-top: 4rem;
+  font-family: var(--font2);
+}
+
+.newsletter-text{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.newsletter-input{
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.sub-btn{
+  color: white;
+  font-weight: 600;
+  background-color: var(--base);
+  border: none;
+  padding: .75rem 2rem;
+}
+
+.email-input{
+  font-family: 'Montserrat', sans-serif;
+  padding: .8rem .5rem;
+  border: none;
+  outline: none;
+}
+
+
+@media screen and (max-width:400px) {
+  .newsletter-title, .newsletter-text{
+    transform: scale(.85);
+  }
+  .newsletter-title{
+    font-size: 2.5em;
+  }
+  .newsletter{
+    padding: 0 0 2rem 0;}
+}

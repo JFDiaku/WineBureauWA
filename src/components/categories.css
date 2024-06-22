@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+/* 
+.categories{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem 10rem 5rem;
+  max-width: 1400px;
+  left: 0;
+  right: 0;
+  margin-top: -15rem;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-left: auto ;
+  margin-right: auto;
+} 
+
+.mobile-categories{
+  position: absolute;
+  max-width: 1400px;
+  margin-left: auto ;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: -15rem;
+  align-items: center;
+}
+
+
+.mobile-categories .slider-container{
+  width: 85%;
+
+}
+
+
+.mobile-categories .category-banner:hover{
+  outline-offset: .5rem;
+}
+
+
+
+
+
+.category-banner{
+  transition: all .5s ease;
+
+}
+
+
+
+
+
+
+
+.category-title{
+  transition: all .5s ease;
+  color: rgb(186, 186, 186);
+  outline: rgba(186, 186, 186, 0)  3px solid ;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.category-banner:hover > .category-title{
+  outline: rgb(186, 186, 186)  3px solid ;
+  border-radius: 5px;
+  outline-offset: 1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .categories{
+    padding: 0 3rem 10rem 3rem;
+  }
+  }
+
+@media screen and (max-width: 750px) {
+.categories{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  gap: 4rem;
+  padding: 0 2.5rem;
+}
+
+}
+*/
+
+.categories{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+max-width: 1400px;
+padding: 3rem 3rem 5rem 3rem ;
+  align-items: center;
+}
+.category-left{
+  width: 50%;
+  
+}
+
+.category-right{
+  height: 30rem;
+
+}
+
+
+.category-right img{
+  height: 100%;
+}
+
+.category-left h4{
+  text-align: center;
+  font-size: 2em;
+  font-family: var(--font);
+  color: black;
+  font-weight: 500;
+}
+
+.wine-cat{
+  padding: 3rem 0 0  0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+.wine-cat-icon{
+  min-width: 6rem;
+  min-height: 6rem;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.red-icon{
+  background-image: url(../assets/images/redIcon.jpg);
+}
+
+.white-icon{
+  background-image:  url(../assets/images/whiteIcon.jpg);
+}
+
+.rose-icon{
+  background-image:  url(../assets/images/roseIcon.jpg);
+}
+
+.spark-icon{
+  background-image:  url(../assets/images/sparkIcon.jpg);
+}
+
+
+
+
+
+.wine-cat-descrip h4{
+  text-align: start;
+  font-size: 1.3em;
+  font-family: var(--font2);
+  font-weight: 600;
+}
+
+.wine-cat-descrip p{
+  font-size: .8em;
+}
+
+@media screen and (max-width: 900px) {
+  .categories{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: auto; 
+    gap: 4rem;
+    padding: 3rem 0;
+    align-items: center;
+  }
+
+  .category-left{
+   width: 80%;
+
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .category-right{
+    height: 22rem;
+  
+  }
+
+
+}
